@@ -1,0 +1,154 @@
+<html>
+<head>
+  <title>UCC Commerce Society Gallery</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+</head>
+<body>
+  <p class="heading">Commerce Society Gallery</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="https://www.irishexaminer.com/cms_media/module_img/5713/2856819_8_articleinline_LC_20ucc_20commerce_2004.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Commerce Conference 2022</p>
+          <p class="opacity-low">Hayfield Manor</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://media.licdn.com/dms/image/D4E22AQE3g532Uw6Qnw/feedshare-shrink_800/0/1667128869225?e=2147483647&v=beta&t=DwZULJTjLg7bBfjLDI7J0FfVZv8JGvF6rNuhoSAIG8Y" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Launching Cork Airport’s Winter Schedule with the UCC Commerce Society.</p>
+          <p class="opacity-low">#CatchaFlight campaign !</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://scontent.fdub5-2.fna.fbcdn.net/v/t39.30808-6/317495547_597350519059835_4260369879577235970_n.jpg?stp=dst-jpg_p600x600&_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=jrZieQKkh9UAX_MaSX1&_nc_ht=scontent.fdub5-2.fna&oh=00_AfDNUlT2iGFeZffFyPA3OSvtZ5tHXnDhckR73Xya_0LLcQ&oe=63C0655B" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>The Movember Campaign</p>
+          <p class="opacity-low">A great attempt made by our students</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://scontent.fdub5-2.fna.fbcdn.net/v/t39.30808-6/315184282_581525083975712_405302469809611187_n.jpg?stp=dst-jpg_s600x600&_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=gOtqd9hPUzYAX-jUKGI&_nc_ht=scontent.fdub5-2.fna&oh=00_AfAyu_YGo3YdhqVGXaMX7jMgXAcqzA5uEM9pqe4XkaB1ng&oe=63C0EB85" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>The Commerce Ball</p>
+          <p class="opacity-low">Insert</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=344" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Sea</p>
+          <p class="opacity-low">Cityscape</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://scontent.fdub5-1.fna.fbcdn.net/v/t39.30808-6/279003276_2857292331083506_6213296141178106293_n.jpg?stp=dst-jpg_p180x540&_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=g0sw6sQHpiIAX9eVm_a&_nc_ht=scontent.fdub5-1.fna&oh=00_AfBE6BFjl5qslhvCnNdX1Nd3gpV0jAMt0IhCPvjVn3zRvQ&oe=63C16612" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>The Committee</p>
+          <p class="opacity-low">Click to see the Commerce Society Committee for 2022-2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+</style>
+</html>
