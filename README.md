@@ -1,6 +1,6 @@
 # ComSite
 UCC COMMERCE SOCIETY CODE
-Includes:
+\nIncludes:
 Event Calendar
 Gallery
 Links directing to Social Media Accounts
